@@ -6,7 +6,10 @@
   "scripts": {
     "start": "node ./index.js",
     "server": "nodemon ./index.js",
-    "debug": "nodemon --inspect ./index.js"
+    "debug": "nodemon --inspect ./index.js",
+    "client-install": "npm i --prefix client",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [
     "express",
@@ -28,6 +31,7 @@
     "passport-jwt": "^4.0.0"
   },
   "devDependencies": {
+    "concurrently": "^6.4.0",
     "nodemon": "^2.0.15"
   }
 }

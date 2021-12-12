@@ -17,3 +17,6 @@ trim_trailing_whitespace = false
 [launch.json]
 indent_style = space
 indent_size = 4
+
+[*.ts]
+quote_type = single

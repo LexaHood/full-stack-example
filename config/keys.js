@@ -1,4 +1,4 @@
 module.exports = {
-  mongoURI: '' || process.env.mongoURI,
-  jwt: '' || process.env.jwt
+  mongoURI: '' || process.env.MONGO_URI_CRM,
+  jwt: '' || process.env.JWT_CRM
 };

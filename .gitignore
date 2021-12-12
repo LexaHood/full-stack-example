@@ -6,8 +6,15 @@
 /out-tsc
 /release
 
+# Only exists if Bazel was run
+/bazel-out
+
+# Only exists if Bazel was run
+/bazel-out
+
 # Dependencies
 /node_modules
+client/node_modules
 
 # Cordova
 /www
@@ -28,6 +35,12 @@ xcuserdata/
 
 # IDE - VSCode
 .vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
 
 # Maven
 /target
@@ -46,6 +59,8 @@ testem.log
 /src/translations/template.*
 /src/environments/.env.*
 /src/environments/environment.ts
+/.angular/cache
+client/.angular/cache
 
 # System Files
 .DS_Store
@@ -58,3 +73,4 @@ proxy.conf.js
 
 # packege-lock
 package-lock.json
+*/package-lock.json
