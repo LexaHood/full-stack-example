@@ -9,7 +9,7 @@ const analyticRoutes = require('./routes/analytic');
 const categoryRoutes = require('./routes/category');
 const orderRoutes = require('./routes/order');
 const positionRoutes = require('./routes/position');
-const keys = require('./config/keys')
+const keys = require('./config/keys');
 const app = express();
 
 // промисы
