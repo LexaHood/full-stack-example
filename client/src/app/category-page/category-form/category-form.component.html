@@ -25,16 +25,24 @@
         class="helper-text red-text"
         [ngClass]="{'invalid': form.get('name')?.invalid && form.get('name')?.touched}"
       >
-        <span *ngIf="form.get('name')?.errors!['required']">
+        <span>
           Имя категории не может быть пустым
         </span>
       </span>
     </div>
 
     <div>
+      <input
+        type="file"
+        class="dn"
+        #input
+        (change)="onFileUpload($event)"
+      >
       <button
         class="waves-effect waves-light btn orange lighten-2 mb2"
         type="button"
+        (click)="triggerClick()"
+        [disabled]="form.disabled"
       >
         <i class="material-icons left">backup</i>
         Загрузить изображение
@@ -53,6 +61,10 @@
   </form>
 
   <div class="col s12 l4 center">
-    <img class="responsive-img" style="height: 200px" src="cake.jpg">
+    <img
+      class="responsive-img h200"
+      [src]="imagePreview"
+      *ngIf="imagePreview"
+    >
   </div>
 </div>
