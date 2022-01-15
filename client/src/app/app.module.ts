@@ -18,6 +18,8 @@ import { CategoryPageComponent } from './category-page/category-page.component';
 import { LoaderComponent } from './shared/components/loader/loader.component';
 import { CategoryFormComponent } from './category-page/category-form/category-form.component';
 import { PositionsFormComponent } from './category-page/category-form/positions-form/positions-form.component';
+import { OrderCategoryComponent } from './order-page/order-category/order-category.component';
+import { OrderPositionComponent } from './order-page/order-position/order-position.component';
 
 
 @NgModule({
@@ -35,6 +37,8 @@ import { PositionsFormComponent } from './category-page/category-form/positions-
     LoaderComponent,
     CategoryFormComponent,
     PositionsFormComponent,
+    OrderCategoryComponent,
+    OrderPositionComponent,
   ],
   imports: [
     FormsModule,

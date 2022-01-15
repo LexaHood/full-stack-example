@@ -13,8 +13,10 @@
 /bazel-out
 
 # Dependencies
-/node_modules
-client/node_modules
+#node_modules
+/node_modules/*
+#client/node_modules
+/client/node_modules/
 
 # Cordova
 /www
@@ -72,5 +74,5 @@ proxy.conf.js
 !/uploads/.gitkeep
 
 # packege-lock
-package-lock.json
-*/package-lock.json
+# package-lock.json
+# client/package-lock.json
