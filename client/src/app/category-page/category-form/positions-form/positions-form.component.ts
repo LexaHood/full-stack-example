@@ -2,7 +2,7 @@ import { AfterViewInit, Component, ElementRef, Input, OnDestroy, OnInit, ViewChi
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MaterialInstance, MaterialService } from 'src/app/shared/classes/material.service';
 import { Position } from 'src/app/shared/interfaces';
-import { PositionsService } from 'src/app/shared/services/posision.service';
+import { PositionsService } from 'src/app/shared/services/position.service';
 
 @Component({
   selector: 'app-positions-form',
